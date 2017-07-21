@@ -6,10 +6,8 @@ import cleanWebpackPlugin from 'clean-webpack-plugin';
 import optimizeCssAssetsWebpackPlugin from 'optimize-css-assets-webpack-plugin';
 
 var VENDOR_LIBS = [
-  "bootstrap", "jquery", "react", "react-dom"
+  "bootstrap", "jquery", "react", "react-dom", "redux", "react-redux"
 ];
-
-
 
 export default (env) => {
   return {
