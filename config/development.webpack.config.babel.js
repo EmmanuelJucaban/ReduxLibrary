@@ -11,7 +11,7 @@ var VENDOR_LIBS = [
 export default (env) => {
   return {
     entry: {
-      main: path.resolve(__dirname, '..'),
+      main: path.resolve(__dirname, '..', 'src'),
       vendor: VENDOR_LIBS
     },
     output: {
@@ -70,7 +70,9 @@ export default (env) => {
     resolve: {
       extensions: ['.js', '.css'],
       alias: {
+        actions: path.resolve(__dirname, '..', 'src/actions'),
         components: path.resolve(__dirname, '..', 'src/components'),
+        containers: path.resolve(__dirname, '..', 'src/containers'),
         styles: path.resolve(__dirname, '..', 'src/styles'),
         reducers: path.resolve(__dirname, '..', 'src/reducers')
       }
